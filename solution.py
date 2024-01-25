@@ -4,13 +4,6 @@ def is_anagram(test, original):
     original = original.lower().strip()
 
     if sorted(test) == sorted(original):
-        print("Words are anagrams")
+        return True
     else:
-        print("Words are not anagram")
-
-
-
-test = "orange"
-original = "granoe"
-
-is_anagram(test, original)
+        return False
